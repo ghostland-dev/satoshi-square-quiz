@@ -4,7 +4,7 @@ import { Evenement } from "@prisma/client";
 import EventTable from "@/components/Event/EventTable";
 import EventSearchBar from "@/components/Event/EventSearchBar";
 import EventModal from "@/components/Event/EventModal";
-import EventHeader from "@/components/Event/EventHeader";
+import PageHeader from "@/components/PageHeader/PageHeader";
 import Sidebar from "@/components/Sidebar/page";
 import Loader from "@/components/Loader";
 import { FaCalculator } from "react-icons/fa";
@@ -79,7 +79,7 @@ const EventsPage: FC = () => {
     fetchEvents(name);
   };
 
-  if (loading) return <Loader/>;
+  if (loading) return <Loader />;
   if (error) return <p>Error: {error}</p>;
 
   return (
@@ -87,7 +87,10 @@ const EventsPage: FC = () => {
       <Sidebar />
       <div className="bg-[#F3F3FF] w-full">
         <div className="p-4 bg-white rounded-lg shadow-md">
-          <EventHeader title="Evenements"  icon={<FaCalculator className="scale-[1.5]" color="#6D6B81" />}/>
+          <PageHeader
+            title="Evenements"
+            icon={<FaCalculator className="scale-[1.5]" color="#6D6B81" />}
+          />
           <EventSearchBar onAdd={() => openModal()} onSearch={handleSearch} />
           <EventTable
             events={events}
