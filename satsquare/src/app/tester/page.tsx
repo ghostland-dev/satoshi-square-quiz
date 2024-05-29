@@ -17,7 +17,7 @@ export type AnswerObject = {
   correct: boolean;
 };
 
-export default function Quiz() {
+export default function Tester() {
   const [loading, setLoading] = useState<boolean>(false);
   const [questions, setQuestions] = useState<QuestionState[]>([]);
   const [number, setNumber] = useState<number>(0);
