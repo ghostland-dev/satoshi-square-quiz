@@ -215,7 +215,6 @@ jobs:
    
       - name: Build Docker image
         run: |
-          cd ./satsquare
           export DATABASE_URL=***REMOVED***
           export NEXTAUTH_SECRET="CP912ECDSClsdezoPDZCMSJCIY20SmfdsFOYDflHZORdsvdsFOZIRGOIZHGOURHZ"
           export NEXT_PUBLIC_LNURL_AUTH_PUBLIC_KEY="***REMOVED***"
