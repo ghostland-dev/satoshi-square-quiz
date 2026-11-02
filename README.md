@@ -103,3 +103,10 @@ NEXT_PUBLIC_SOCKET_URL="ws://localhost:5157"
 ---
 
 Continue this process for testing and production environments as needed, updating paths and environment variables according to your project's requirements.
+
+## Author
+
+**Ismail.M**, Software Engineer & DevOps
+
+- GitHub: [@ghostland-dev](https://github.com/ghostland-dev)
+- Website: [ismail-mouyahada.com](https://www.ismail-mouyahada.com)
