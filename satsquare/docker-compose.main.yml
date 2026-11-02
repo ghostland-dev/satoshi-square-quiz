@@ -5,8 +5,8 @@ services:
       - "3000:3000"
       - "5157:5157"
     environment:
-      DATABASE_URL: "***REMOVED***"
-      NEXTAUTH_SECRET: "***REMOVED***"
+      DATABASE_URL: "postgresql://user:password@localhost:5432/app_db"
+      NEXTAUTH_SECRET: "dummy-nextauth-secret-for-tests"
       NEXT_PUBLIC_SITE_URL: "http://app:3000"
       NEXT_PUBLIC_SOCKET_URL: "ws://app:5157"
     depends_on:
